@@ -2,21 +2,20 @@
 
 A) How to pull a docker image manually from the AWS repository
 
-aws configure
+$ aws configure
    // Enter value only for region:  eu-west-1  **We had AWS SAML Onelogin authenticated via AD
 
-eval $(aws ecr get-login --no-include-email | sed 's|https://||')   // From https://forums.docker.com/t/docker-push-to-ecr-failing-with-no-basic-auth-credentials/17358/7
+$ eval $(aws ecr get-login --no-include-email | sed 's|https://||')   // From https://forums.docker.com/t/docker-push-to-ecr-failing-with-no-basic-auth-credentials/17358/7
 
-aws ecr describe-repositories    // If all is good list of repositories will be displayed
+$ aws ecr describe-repositories    // If all is good list of repositories will be displayed
 
-aws ecr describe-images --repository-name <name-of-repository-from-the-above-output> --output text
+$ aws ecr describe-images --repository-name <name-of-repository-from-the-above-output> --output text
 
-docker pull <enter the full pah as shown in ECR web console>
+$ docker pull <enter the full pah as shown in ECR web console>
 
-   // Example : 
-    docker pull <aws-account>.dkr.ecr.eu-west-1.amazonaws.com/<name-of-the-repository>:<name-of-the-image>
+   // Example : docker pull <aws-account>.dkr.ecr.eu-west-1.amazonaws.com/<name-of-the-repository>:<name-of-the-image>
     
  
-docker images
+$ docker images
 
 
