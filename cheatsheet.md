@@ -13,10 +13,9 @@ $ aws ecr describe-images --repository-name <name-of-repository-from-the-above-o
 
 $ aws ecr list-images --repository-name <name-of-repository-from-the-above-output>
 
-$ docker pull <enter the full pah as shown in ECR web console>
+$ docker pull <aws-account>.dkr.ecr.eu-west-1.amazonaws.com/<name-of-repository->:<tag>
 
-   // Example : docker pull <aws-account>.dkr.ecr.eu-west-1.amazonaws.com/<name-of-the-repository>:<name-of-the-image>
-    
+   // The image name format should be registry/repository[:tag]
  
 $ docker images
 
