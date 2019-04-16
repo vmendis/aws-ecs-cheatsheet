@@ -1,7 +1,5 @@
 ## This was done from an ec2 instance cloned from a ECS cluster
 
-# VagrantAlpineApacheDocker
-
 A) How to pull a docker image manually from the AWS repository
 
 aws configure
