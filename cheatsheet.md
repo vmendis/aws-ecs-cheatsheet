@@ -3,7 +3,7 @@
 A) How to pull a docker image manually from the AWS repository
 
 aws configure
-   // Enter value only for region:  eu-west-1
+   // Enter value only for region:  eu-west-1  **We had AWS SAML Onelogin authenticated via AD
 
 eval $(aws ecr get-login --no-include-email | sed 's|https://||')   // From https://forums.docker.com/t/docker-push-to-ecr-failing-with-no-basic-auth-credentials/17358/7
 
