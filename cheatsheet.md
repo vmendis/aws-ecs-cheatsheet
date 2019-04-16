@@ -11,7 +11,7 @@ $ aws ecr describe-repositories    // If all is good list of repositories will b
 
 $ aws ecr describe-images --repository-name <name-of-repository-from-the-above-output> --output text
 
-$ aws ecr list-images --repository-name "<name-of-repository>"
+$ aws ecr list-images --repository-name name-of-repository
 
 $ docker pull <aws-account>.dkr.ecr.eu-west-1.amazonaws.com/<name-of-repository->:<tag>
 
