@@ -24,7 +24,7 @@ $ docker images
 
 Add the following Roles to the EC2
 
-AmazonECSTaskExecutionRolePolicy-->   AWS managed policy \ 
+AmazonECSTaskExecutionRolePolicy      AWS managed policy \ 
 AirflowAllowCloudwatchLogs            Inline policy  \
 AirflowAllowECRECS                    Inline policy  \
 AirflowAllowS3BucketAccess            Inline policy  \
