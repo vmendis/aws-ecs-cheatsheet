@@ -1,4 +1,4 @@
-## This was done from an ec2 instance cloned from a ECS cluster
+## This was done from an ec2 instance cloned from an EC2 instance in a ECS cluster
 
 A) How to pull a docker image manually from the AWS repository
 
