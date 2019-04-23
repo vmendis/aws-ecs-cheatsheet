@@ -20,3 +20,14 @@ $ docker pull <aws-account>.dkr.ecr.eu-west-1.amazonaws.com/<name-of-repository-
 $ docker images
 
 
+## To achive the same results using a normal EC2 (amzn2-ami-hvm-2.0.20190313-x86_64-gp2 (ami-07683a44e80cd32c5) ) :
+
+Add the following Roles to the EC2
+
+AmazonECSTaskExecutionRolePolicy      AWS managed policy
+AirflowAllowCloudwatchLogs            Inline policy
+AirflowAllowECRECS                    Inline policy
+AirflowAllowS3BucketAccess            Inline policy
+AirflowAllowSecrets                   Inline policy
+AirflowAllowSSMGetParameter           Inline policy
+
